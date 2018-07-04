@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_13pnqbe" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="decision_1cl8qsr" name="Fachbereich">
+    <extensionElements>
+      <biodi:bounds x="357" y="107" width="180" height="80" />
+      <biodi:edge source="InputData_1npud9e">
+        <biodi:waypoints x="470" y="322" />
+        <biodi:waypoints x="476" y="187" />
+      </biodi:edge>
+    </extensionElements>
+    <informationRequirement>
+      <requiredInput href="#InputData_1npud9e" />
+    </informationRequirement>
+    <decisionTable id="decisionTable">
+      <input id="InputClause_0lbzue3" label="Studiengang" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_1jskwlr" typeRef="string">
+          <text>program</text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="Fachbereich" name="Fachbereich" typeRef="string" />
+      <rule id="DecisionRule_0o658n8">
+        <inputEntry id="UnaryTests_1dfb8pv">
+          <text><![CDATA["Applied Computer Science"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18qflrw">
+          <text><![CDATA["Informatik und Medien"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0eqszs1">
+        <inputEntry id="UnaryTests_023v9iz">
+          <text><![CDATA["Informatik"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07a687s">
+          <text><![CDATA["Informatik und Medien"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1esn8c8">
+        <inputEntry id="UnaryTests_0edtyrh">
+          <text><![CDATA["Medieninformatik"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0swotgj">
+          <text><![CDATA["Informatik und Medien"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ha2at8">
+        <inputEntry id="UnaryTests_1a69bl4">
+          <text><![CDATA["Medizininformatik"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ars1jo">
+          <text><![CDATA["Informatik und Medien"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11r4mf3">
+        <inputEntry id="UnaryTests_1n9z3dr">
+          <text><![CDATA["Digitale Medien"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04vkdo9">
+          <text><![CDATA["Informatik und Medien"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vituk2">
+        <inputEntry id="UnaryTests_1e0kjy4">
+          <text><![CDATA["Augenoptik / Optische Gerätetechnik"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1psqeh3">
+          <text><![CDATA["Technik"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03flsjq">
+        <inputEntry id="UnaryTests_0a0o6ck">
+          <text><![CDATA["Ingenieurwissenschaften"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00si60u">
+          <text><![CDATA["Technik"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_086ramf">
+        <inputEntry id="UnaryTests_0tubirh">
+          <text><![CDATA["Maschinenbau"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0usayrf">
+          <text><![CDATA["Technik"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tsvy00">
+        <inputEntry id="UnaryTests_18o3e3c">
+          <text><![CDATA["Wirtschaftsingenieurwesen"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0v9sezh">
+          <text><![CDATA["Technik"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1edlqpl">
+        <inputEntry id="UnaryTests_189xsuh">
+          <text><![CDATA["Energieeffizienz Technischer Systeme"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f4bsts">
+          <text><![CDATA["Technik"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10ejkgp">
+        <inputEntry id="UnaryTests_0xyrkf2">
+          <text><![CDATA["Photonik"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0r6bvbq">
+          <text><![CDATA["Technik"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gfc1zr">
+        <inputEntry id="UnaryTests_0qkybuy">
+          <text><![CDATA["Berufsbegleitende Betriebswirtschaftslehre"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1s82h98">
+          <text><![CDATA["Wirtschaft"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_04lx2bp">
+        <inputEntry id="UnaryTests_0nzp5mb">
+          <text><![CDATA["Betriebswirtschaftslehre"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06j7ubm">
+          <text><![CDATA["Wirtschaft"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08outbv">
+        <inputEntry id="UnaryTests_0v2muse">
+          <text><![CDATA["Wirtschaftsinformatik"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wqg5sf">
+          <text><![CDATA["Wirtschaft"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qdu778">
+        <inputEntry id="UnaryTests_1iykbh4">
+          <text><![CDATA["Security Management"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_125l0ke">
+          <text><![CDATA["Wirtschaft"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0cbo56a">
+        <inputEntry id="UnaryTests_1dz2xn6">
+          <text><![CDATA["Technologie- und Innovationsmanagement"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0to0foo">
+          <text><![CDATA["Wirtschaft"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1npud9e" name="Studiengang">
+    <extensionElements>
+      <biodi:bounds x="424" y="322" width="125" height="45" />
+    </extensionElements>
+  </inputData>
+</definitions>

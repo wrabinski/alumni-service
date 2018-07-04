@@ -1,0 +1,178 @@
+<form class="form-horizontal"
+      role="form">
+
+  <h4><p><strong>Pers&ouml;nliche Angaben:</strong)</p></h4>
+
+  <div class="form-group">
+  <label class="control-label col-md-2">Anrede*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="anrede"
+             type="text"
+             name="anrede"
+             readonly="true"
+             class="form-control" />
+</div>
+
+
+  <div class="form-group">
+    <label class="control-label col-md-2">Vorname</label>
+    <div class="col-md-10">
+      <input cam-variable-name="firstname"
+             type="text"
+             name="firstname"
+             readonly="true"
+             class="form-control" />
+    </div>
+  </div>
+
+    <div class="form-group">
+    <label class="control-label col-md-2">Nachname</label>
+    <div class="col-md-10">
+      <input cam-variable-name="name"
+             type="text"
+             name="name"
+             readonly="true"
+             class="form-control" />
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-md-2">Private E-Mail*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="pmail"
+      		 cam-variable-type="String"
+             type="text"
+             name="pmail"
+             class="form-control" required/>
+    </div>
+  </div>
+  
+   <div class="form-group">
+  <label class="control-label col-md-2">Staatsangeh&ouml;rigkeit*</label>
+  <div class="col-md-10">
+    <select  cam-variable-name="nationality"
+      		 cam-variable-type="String"
+    		 type="enum"
+             id="nationality"
+             name="nationality" required autofocus>
+      <option>Australien</option>
+      <option>Brasilien</option>
+      <option>Deutschland</option>
+      <option>Ecuado</option>
+      <option>Frankreich</option>
+      <option>Griechenland</option>
+      <option>Indonesien</option>
+      <option>Kamerun</option>
+      <option>Malaysia</option>
+      <option>Neuseeland</option>
+      <option>Philippien</option>
+      <option>Vietnam</option> 
+      <option>Andere</option> 
+    </select>
+  </div>
+</div>
+  
+  <h4><p><strong>Angaben zum Studium:</strong></p></h4>
+ 
+    <div class="form-group">
+    <label class="control-label col-md-2">Abschluss</label>
+    <div class="col-md-10">
+      <input cam-variable-name="degree"
+             type="text"
+             name="degree"
+             readonly="true"
+             class="form-control" />
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-md-2">Studiengang</label>
+    <div class="col-md-10">
+      <input cam-variable-name="program"
+             type="text"
+             name="program"
+             readonly="true"
+             class="form-control" />
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">Hochschule-Mailadresse</label>
+    <div class="col-md-10">
+      <input cam-variable-name="unimail"
+      		 cam-variable-type="String"
+             type="text"
+             name="unimail"
+             class="form-control" />
+    </div>
+  </div>
+  
+  <h4><p><strong>Anschrift:</strong></p></h4>
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">Stra&szlige und Nr.</label>
+    <div class="col-md-10">
+      <input cam-variable-name="adress"
+      		 cam-variable-type="String"
+             type="text"
+             name="adress"
+             class="form-control" />
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">PLZ</label>
+    <div class="col-md-10">
+      <input cam-variable-name="plz"
+     		 cam-variable-type="Double"
+             type="number"
+             name="plz"
+             class="form-control" />
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">Ort</label>
+    <div class="col-md-10">
+      <input cam-variable-name="place"
+      		 cam-variable-type="String"
+             type="text"
+             name="place"
+             class="form-control" />
+    </div>
+  </div>
+  
+  
+  
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-2">
+      <div class="checkbox">
+        <label>
+        
+        <input cam-variable-name="ds"
+                 cam-variable-type="Boolean"
+                 type="checkbox"
+                 name="ds"
+                 class="form-control" required />
+         *Ich stimme <a href="https://www.careerservice-thb.de//de/datenschutz-alumni.php/">den AGB und den Datenschutzbestimmungen</a> von Technischen Hochschule Brandenburg zu.<br>
+     
+         <input cam-variable-name="cz"
+                 cam-variable-type="Boolean"
+                 type="checkbox"
+                 name="cz"
+                 class="form-control"/>
+         Ich m&ouml;chte die Campuszeitschrift "INFOCUS" kostenlos per Post erhalten.<br>
+         <input cam-variable-name="af"
+                 cam-variable-type="Boolean"
+                 type="checkbox"
+                 name="af"
+                 class="form-control"/>
+         Ich m&ouml;chte zu Alumni-Feierlichkeiten und anderen Veranstaltungen eingeladen werden. 
+        </label>
+      </div>
+    </div>  
+    
+  </div>
+
+
+</form>

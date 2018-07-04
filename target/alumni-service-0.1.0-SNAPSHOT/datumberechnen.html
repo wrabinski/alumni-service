@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+var tD = new Date();
+var datestr = tD.setDate(tD.getDate() + 4) + "/" + (tD.getMonth()+ 1) + "/" + tD.getFullYear();
+function popDate(eN) {
+document.forms[0].elements[eN].value = datestr;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" value="Eerste mogelijkheid:" name="foo"/>
+<input type="text" name="dateField"/>
+<input type="button" value="Update"/>
+</form>
+</body>
+</html>

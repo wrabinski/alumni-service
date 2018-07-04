@@ -1,0 +1,172 @@
+<form class="form-horizontal"
+      role="form">
+
+
+  <div class="form-group">
+  <label class="control-label col-md-2">Anrede*</label>
+  <div class="col-md-10">
+    <select cam-variable-name="anrede"
+      		 cam-variable-type="String"
+      		 type="text"
+             id="anrede"
+      		 name="anrede" required>
+      <option>Herr</option>
+      <option>Frau</option>
+    </select>
+  </div>
+</div>
+
+
+  <div class="form-group">
+    <label class="control-label col-md-2">Vorname*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="firstname"
+      		 cam-variable-type="String"
+             type="text"
+             id="firstname"
+             name="firstname"
+             class="form-control" required />
+    </div>
+  </div>
+
+    <div class="form-group">
+    <label class="control-label col-md-2">Nachname*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="name"
+      		 cam-variable-type="String"
+             type="text"
+             id="name"
+             name="name"
+             class="form-control" required />
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="control-label col-md-2">Hochschule-Mailadresse*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="unimail"
+      		 cam-variable-type="String"
+             type="text"
+             id="unimail"
+             name="unimail"
+             class="form-control" required/>
+    </div>
+  </div>
+
+
+<div class="form-group">
+  <label class="control-label col-md-2">Abschluss*</label>
+  <div class="col-md-10">
+    <select  cam-variable-name="degree"
+      		 cam-variable-type="String"
+      		 type="text"
+             id="degree"
+      		 name="degree">
+      <option>Bachelor</option>
+      <option>Master</option>
+      <option>Diplom</option>
+    </select>
+  </div>
+</div>
+ 
+
+<div class="form-group">
+  	<label class="control-label col-md-2">Studiengang*</label>
+  	<div class="col-md-10">
+   	 <select cam-variable-name="program"
+   	 		 cam-variable-type="String"
+   	 		 type="text"
+             id="program"
+             name="program">
+      <option>Applied Computer Science</option>
+      <option>Augenoptik/ Optische Ger�tetechnik</option>
+      <option>Berufsbegleitende Betriebswirtschaftslehre</option>
+      <option>Betriebswirtshaftlehre</option>
+      <option>Digitale Medien</option>
+      <option>Energieeffizienz Technischer Systeme</option>
+      <option>Informatik</option>
+      <option>Ingenieurwissenschaften</option>
+      <option>Ingenieurwissenschaften</option>
+      <option>Maschinenbau</option>
+      <option>Medieninformatik</option>
+      <option>Photonik</option> 
+      <option>Security Management</option> 
+      <option>Technologie und Innovationsmanagement</option>
+      <option>Wirtschaftsinformatik</option>
+      <option>Wirtschaftsingenieurwesen</option>
+    </select>
+  </div>
+</div>
+  
+  
+  <div class="form-group">
+    <label class="control-label col-md-2">Matrikelnummer*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="mnumber"
+     		 cam-variable-type="Double"
+             type="number"
+             id="mnumber"
+             name="mnumber"
+             class="form-control" required/>
+    </div>
+  </div>
+  
+  
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">Thema der Abchlussarbeit*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="theme"
+      		 cam-variable-type="String"
+             type="text"
+             id="theme"
+             name="theme"
+             class="form-control" required />
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">1. Betreuer*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="first_supervisor"
+      		 cam-variable-type="String"
+             type="text"
+             id="first_supervisor"
+             name="first_supervisor"
+             class="form-control" required/>
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label class="control-label col-md-2">2. Gutachter*</label>
+    <div class="col-md-10">
+      <input cam-variable-name="second_supervisor"
+      		 cam-variable-type="String"
+             type="text"
+             id="second_supervisor"
+             name="second_supervisor"
+             class="form-control"/>
+    </div>
+  </div>
+  
+  
+  
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-2">
+      <div class="checkbox">
+        <label>
+         <input  cam-variable-name="alumni"
+                 cam-variable-type="Boolean"
+                 type="checkbox"
+                 name="alumni"
+                 class="form-control"
+                 checked/>
+         Als Alumni Registrieren?<br>
+        </label>
+      </div>
+    </div>  
+    
+  </div>
+
+
+</form>
