@@ -13,8 +13,8 @@ public class AlumniRegistriertMail implements JavaDelegate {
 
   // TODO: Set Mail Server Properties
   private static final String HOST = "smtp.gmail.com";
-  private static final String USER = "camundauser@gmail.com";
-  private static final String PWD = "pyZ-Bk3-u2u-WY9";
+  private static final String USER = "<EMAIL-ADRESS>";
+  private static final String PWD = "<PASSWORD>";
 
   private final static Logger LOGGER = Logger.getLogger(AlumniRegistriertMail.class.getName());
 

@@ -13,8 +13,8 @@ public class AlumniErinnerungsMail implements JavaDelegate {
 
   // TODO: Set Mail Server Properties
   private static final String HOST = "smtp.gmail.com";
-  private static final String USER = "camundauser@gmail.com";
-  private static final String PWD = "pyZ-Bk3-u2u-WY9";
+  private static final String USER = "<EMAIL-ADRESS>";
+  private static final String PWD = "<PASSWORD>";
 
   private final static Logger LOGGER = Logger.getLogger(AbschussarbeitMail.class.getName());
 
@@ -26,12 +26,12 @@ public class AlumniErinnerungsMail implements JavaDelegate {
       String etext ;
 	  if ( anrede.equals( "Herr"))
 	  {etext ="Sehr geehrter Herr "+ name +", \n\n"
-    		  		+ "hiermit m\u00f6chte ich Sie erinnern, dass Sie sich für unser Netzwerk Alumni noch nicht regetriert haben.\n\n"
+    		  		+ "hiermit m\u00f6chte ich Sie erinnern, dass Sie sich fï¿½r unser Netzwerk Alumni noch nicht regetriert haben.\n\n"
     		  		+ "Gerne ku00fcnnen Sie sich HIER registrieren.\n\n"
     		  		+ "\n\n Mit freundlichen Gruessen, \n\n Demo Demo";}
       
 	  else   {etext ="Sehr geehrte Frau "+ name +", \n\n"
-		  		+ "hiermit m\u00f6chte ich Sie erinnern, dass Sie sich für unser Netzwerk Alumni noch nicht regetriert haben.\n\n"
+		  		+ "hiermit m\u00f6chte ich Sie erinnern, dass Sie sich fï¿½r unser Netzwerk Alumni noch nicht regetriert haben.\n\n"
 		  		+ "Gerne ku00fcnnen Sie sich HIER registrieren.\n\n"
 		  		+ "\n\n Mit freundlichen Gruessen, \n\n Demo Demo";}
 	  
