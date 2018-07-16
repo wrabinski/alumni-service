@@ -14,7 +14,7 @@ public class DBConn implements JavaDelegate{
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "org.h2.Driver";
 	static final String DB_URL = "jdbc:h2:~/test";
-	
+
 	private final static Logger LOGGER = Logger.getLogger(DBConn.class.getName());
 
 	// Database credentials
@@ -38,7 +38,7 @@ public class DBConn implements JavaDelegate{
 		  Boolean cz = (Boolean) execution.getVariable("cz");
 		  Boolean af = (Boolean) execution.getVariable("af");
 		  String Fachbereich = (String) execution.getVariable("Fachbereich");
-	
+
 		Connection conn = null;
 		Statement stmt = null;
 		try {
@@ -56,11 +56,11 @@ public class DBConn implements JavaDelegate{
 						+ "(ID,ANREDE,FIRSTNAME,NAME,PMAIL,NATIONALITY,DEGREE,UNIMAIL,ADRESS,PLZ,PLACE,CZ,AF,FIELD,PROGRAM) "
 						+ "VALUES (default, '"+anrede+"', '"+firstname+"', '"+name+"', '"+pmail+"', '"+nationality+"', '"+degree+"', '"+unimail+"', '"+adress+"', "+plz+", '"+place+"', "+cz+", "+af+", '"+Fachbereich+"','"+program+"');";
 			LOGGER.info(sql);
-			
+
 			stmt.executeUpdate(sql);
 
-			
-			
+
+
 			// STEP 4: Clean-up environment
 			stmt.close();
 			conn.close();
@@ -87,7 +87,3 @@ public class DBConn implements JavaDelegate{
 		//System.out.println("Goodbye!");
 	}
 }
-
-//INSERT INTO ALUMNI VALUES (default, 'Herr', 'waldi', 'Rabinski', 'private@mail.org', 'Deutschland', 'Master', 'uni@th.bra.de', 'Strasse 44', 21232, 'Place', true, true, 'Wirtschaft', 'Wirtschaftsinformatik');
-//"INSERT INTO ALUMNI VALUES (default, '"+anrede+"', '"+firstname+"', '"+name+"', '"+pmail+"', '"+nationality+"', '"+degree+"', '"+unimail+"', '"+adress+"', "+plz+", '"+place+"', "+cz+", "+af+", '"+Fachbereich+"','"+program+"');"
-
